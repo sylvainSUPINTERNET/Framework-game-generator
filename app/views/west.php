@@ -1,1 +1,1 @@
-<?php echo('<p>pazeakzeoaoeaoekzoak</p>')?>
+<?php include '../app/controllers/westController.php' ?> <?php echo('<p>pazeakzeoaoeaoekzoak</p>')?>

@@ -14,7 +14,8 @@ $story = Yaml::parse(file_get_contents('../config-story/story.yml'));
 function generateView($dir, $viewName, $contentStory)
 {
     $fp = fopen($dir . "/views/" . $viewName . ".php", "a+");
-    fputs($fp, "<?php echo('<p>$contentStory</p>')?>");
+    $linkedController = $viewName."Controller.php";
+    fputs($fp, "<?php include '../app/controllers/$linkedController' ?> <?php echo('<p>$contentStory</p>')?>");
     fclose($fp);
 }
 
@@ -66,9 +67,17 @@ foreach ($story['story'] as $data) {
     if ($data['path'] == $currentUrl) {
         ob_start();
         include "../app/views/" . $data['view'] . ".php";
-        include "../app/controllers/" . $data['controller'] . "Controller.php";
         $content = ob_get_clean();
         $response->setContent($content);
+    }else{
+        /*
+        $response->setStatusCode(404);
+        //$response->setContent("Oops page not found ! ");
+
+        if ($response->getStatusCode() == 404) {
+            include '../app/errors_views/404.php';
+        }
+        */
     }
 }
 

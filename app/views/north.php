@@ -1,1 +1,1 @@
-<?php echo('<p>northnorthnorthnorthnorthnorthnorthnorthnorthnorthnorthnorth</p>')?>
+<?php include '../app/controllers/northController.php' ?> <?php echo('<p>northnorthnorthnorthnorthnorthnorthnorthnorthnorthnorthnorth</p>')?>

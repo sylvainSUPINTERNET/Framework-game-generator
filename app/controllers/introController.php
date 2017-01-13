@@ -1,1 +1,1 @@
-<?php #Write your content ?>
+<?php var_dump("test") #Write your content ?>

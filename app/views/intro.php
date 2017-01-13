@@ -1,1 +1,1 @@
-<?php echo('<p>lorem ipsummm pazepkaozeakeazkzekazoekaokeaeoakzoekaozekoaekaoe</p>')?>
+<?php include '../app/controllers/introController.php' ?> <?php echo('<p>lorem ipsummm pazepkaozeakeazkzekazoekaokeaeoakzoekaozekoaekaoe</p>')?>
