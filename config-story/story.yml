@@ -1,0 +1,30 @@
+story:
+  part1 :
+      path: "/intro"
+      controller: "intro"
+      view: "intro"
+      story: "lorem ipsummm pazepkaozeakeazkzekazoekaokeaeoakzoekaozekoaekaoe"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part2 :
+      path: "/west"
+      controller: "west"
+      view: "west"
+      story: "pazeakzeoaoeaoekzoak"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part3 :
+      path: "/north"
+      controller: "north"
+      view: "north"
+      story: "northnorthnorthnorthnorthnorthnorthnorthnorthnorthnorthnorth"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+
+
+
+
+
