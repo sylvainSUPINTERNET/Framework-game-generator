@@ -1,6 +1,5 @@
 <?php include '../app/controllers/forcerController.php' ?>
 
-
 <p>Vous avez forcer l'accès !</p>
 
 <?php

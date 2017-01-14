@@ -1,6 +1,7 @@
 <?php include '../app/controllers/southController.php' ?>
 
 
+
 <a href="/north" class="btn btn-warning">Sortir</a> <!-- good route -->
 
 <a href="/intro" class="btn btn-success">Foyer de l'Opera</a>

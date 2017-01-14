@@ -24,6 +24,7 @@ print("
 </a>
 <br>");
 ?>
+
 ?>
 <script src="js/jquery.js"></script>
 <script>
@@ -39,7 +40,7 @@ print("
         doorsClose.mouseover(function () {
             $(this).css({
                 "background": "black",
-                "transition" : "1s"
+                "transition": "1s"
             });
         });
         doorsClose.mouseout(function () {

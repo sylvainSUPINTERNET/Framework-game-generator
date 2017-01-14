@@ -9,3 +9,4 @@ print($testWarningShadow);
 <a href="/forcer"><span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> Forcer l'accès</a>
 </a>
 <br>
+

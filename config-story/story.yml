@@ -22,8 +22,7 @@ story:
       controller: "westShadow"
       view: "westShadow"
       template: "westShadow"
-      story: "westShadowwestShadow westShadow"
-      treatment: "$testWarningShadow = 'Vous déranger quelque chose dans l'obscurité, peut-être devriez vous songer à déposer votre manteau avant d'entrée !';"
+      treatment: "$testWarningShadow = 'Vous déranger quelque chose dans l obscurité, peut-être devriez vous songer à déposer votre manteau avant d entrée !';"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -32,7 +31,6 @@ story:
       controller: "west"
       view: "west"
       template: "west"
-      story: "west west"
       treatment: "$textWest = 'Votre manteau est gênant, vous devriez en faire quelque chose';"
       dir: '../app'
       dir_ctrl: '../app/controllers'
@@ -42,7 +40,6 @@ story:
       controller: "north"
       view: "north"
       template: "north"
-      story: "north north"
       treatment: "$textNorth = 'Vous êtes dehors veuillez rentrez !';"
       dir: '../app'
       dir_ctrl: '../app/controllers'
@@ -52,7 +49,6 @@ story:
       controller: "cloackVestiaire"
       view: "cloackVestiaire"
       template: "cloackVestiaire"
-      story: "cloackVestiaire cloackVestiaire"
       treatment: "$cloackVestiaire = 'Votre manteau a été déposé au vestiaire !'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
@@ -62,7 +58,6 @@ story:
       controller: "cloackHook"
       view: "cloackHook"
       template: "cloackHook"
-      story: "cloackHook cloackHook"
       treatment: "$cloackHook = 'Votre manteau a bien été mis sur le porte-manteau!'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
@@ -72,7 +67,6 @@ story:
       controller: "westOpen"
       view: "westOpen"
       template: "westOpen"
-      story: "westOpen westOpen"
       treatment: "$textWestOpen = 'La salle est désormais éclairée';"
       dir: '../app'
       dir_ctrl: '../app/controllers'
@@ -82,7 +76,6 @@ story:
       controller: "message"
       view: "message"
       template: "message"
-      story: "message message"
       treatment: " $try = $session->get('try');
       if($try == null){
          $try = 0;
@@ -99,8 +92,7 @@ story:
       path: "/reset"
       controller: "reset"
       view: "reset"
-      template: "reset reset"
-      story: "reset reset"
+      template: "reset"
       treatment: "$testReset = 'data test from controller of reset route'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
@@ -110,7 +102,6 @@ story:
       controller: "forcer"
       view: "forcer"
       template : "forcer"
-      story: "forcer forcer"
       treatment: "$testForcer = 'data test from controller of force route'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
