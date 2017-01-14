@@ -9,13 +9,12 @@ use Symfony\Component\Yaml\Yaml;
 
 $story = Yaml::parse(file_get_contents('../config-story/story.yml'));
 
-//Generate view / Controller
-// RAJOUTER LES INCLUDES ET MOYEN DE ATTRIBUER DES ROUTES SUR LES VIEWS ET LE CONTROLLER QUI DOIT ETRE APPELER
+
 function generateView($dir, $viewName, $contentStory)
 {
     $fp = fopen($dir . "/views/" . $viewName . ".php", "a+");
-    $linkedController = $viewName."Controller.php";
-    fputs($fp, "<?php include '../app/controllers/$linkedController' ?> <?php echo('<p>$contentStory</p>')?>");
+    $linkedController = $viewName . "Controller.php";
+    fputs($fp, "<?php include \"../web/layout/header.php\";?> <?php include '../app/controllers/$linkedController' ?> <?php echo('<p>$contentStory</p>')?>");
     fclose($fp);
 }
 
@@ -34,7 +33,7 @@ function generateController($dir, $ctrlName)
 //CLI for generate views and controllers
 if (isset($argv) && $argv[1] == 'generate' && $argv[0] == 'index.php') {
     //Generate file view or controller and IF view add content into key story in yaml
-//var_dump($story['story']);
+    //var_dump($story['story']);
     foreach ($story['story'] as $partStory) {
         //var_dump($part['path'],$part['controller'], $part['view'], $part['story']);
         generateView($partStory['dir'], $partStory['view'], $partStory['story']);
@@ -69,7 +68,7 @@ foreach ($story['story'] as $data) {
         include "../app/views/" . $data['view'] . ".php";
         $content = ob_get_clean();
         $response->setContent($content);
-    }else{
+    } else {
         /*
         $response->setStatusCode(404);
         //$response->setContent("Oops page not found ! ");
@@ -80,6 +79,7 @@ foreach ($story['story'] as $data) {
         */
     }
 }
+
 
 $response->send();
 ?>

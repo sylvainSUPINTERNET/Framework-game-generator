@@ -1,1 +1,2 @@
-<?php include '../app/controllers/introController.php' ?> <?php echo('<p>lorem ipsummm pazepkaozeakeazkzekazoekaokeaeoakzoekaozekoaekaoe</p>')?>
+<?php include "../web/layout/header.php";?>
+<?php include '../app/controllers/introController.php' ?> <?php echo('<p>intro page </p>')?>

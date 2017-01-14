@@ -3,27 +3,90 @@ story:
       path: "/intro"
       controller: "intro"
       view: "intro"
-      story: "lorem ipsummm pazepkaozeakeazkzekazoekaokeaeoakzoekaozekoaekaoe"
+      story: "intro page"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
   part2 :
-      path: "/west"
-      controller: "west"
-      view: "west"
-      story: "pazeakzeoaoeaoekzoak"
+      path: "/south"
+      controller: "south"
+      view: "south"
+      story: "south Page"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
   part3 :
-      path: "/north"
-      controller: "north"
-      view: "north"
-      story: "northnorthnorthnorthnorthnorthnorthnorthnorthnorthnorthnorth"
+      path: "/westShadow"
+      controller: "westShadow"
+      view: "westShadow"
+      story: "westShadowwestShadow westShadow"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
-
+  part4 :
+      path: "/west"
+      controller: "west"
+      view: "west"
+      story: "west west"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part5 :
+      path: "/north"
+      controller: "north"
+      view: "north"
+      story: "north north"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part6 :
+      path: "/cloackVestiaire"
+      controller: "cloackVestiaire"
+      view: "cloackVestiaire"
+      story: "cloackVestiaire cloackVestiaire"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part7 :
+      path: "/cloackHook"
+      controller: "cloackHook"
+      view: "cloackHook"
+      story: "cloackHook cloackHook"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part8 :
+      path: "/westOpen"
+      controller: "westOpen"
+      view: "westOpen"
+      story: "westOpen westOpen"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part9 :
+      path: "/message"
+      controller: "message"
+      view: "message"
+      story: "message message"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part10 :
+      path: "/reset"
+      controller: "reset"
+      view: "reset"
+      story: "reset reset"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part11 :
+      path: "/forcer"
+      controller: "forcer"
+      view: "forcer"
+      story: "forcer forcer"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
 
 
 
