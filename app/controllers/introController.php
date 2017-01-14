@@ -1,2 +1,2 @@
 <?php #Write your content 
- $title = 'Foyer Opera'; ?>
+ $title = 'Foyer Of Opera'; ?>

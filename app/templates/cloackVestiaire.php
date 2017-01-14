@@ -1,0 +1,1 @@
+<?php include '../app/controllers/cloackVestiaireController.php' ?>

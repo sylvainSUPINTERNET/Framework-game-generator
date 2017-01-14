@@ -9,12 +9,20 @@ use Symfony\Component\Yaml\Yaml;
 
 $story = Yaml::parse(file_get_contents('../config-story/story.yml'));
 
+function generateTemplates($dir, $templateName){
+    $fp = fopen($dir . "/templates/" . $templateName . ".php", "a+");
+    $linkedController = $templateName."Controller.php";
+    fputs($fp, "<?php include '../app/controllers/$linkedController' ?>");
+    fclose($fp);
+}
 
-function generateView($dir, $viewName, $contentStory)
+
+function generateView($dir, $viewName, $template)
 {
     $fp = fopen($dir . "/views/" . $viewName . ".php", "a+");
     $linkedController = $viewName . "Controller.php";
-    fputs($fp, "<?php include \"../web/layout/header.php\";?> \r\n <?php include '../app/controllers/$linkedController' ?> \r\n <?php echo('<p>$contentStory</p>')?>");
+    $template = $template.".php";
+    fputs($fp, "<?php include \"../web/layout/header.php\";?> \r\n <?php include \"../app/templates/$template\";?> \r\n <?php include '../app/controllers/$linkedController' ?>");
     fclose($fp);
 }
 
@@ -36,8 +44,10 @@ if (isset($argv) && $argv[1] == 'generate' && $argv[0] == 'index.php') {
     //var_dump($story['story']);
     foreach ($story['story'] as $partStory) {
         //var_dump($part['path'],$part['controller'], $part['view'], $part['story']);
-        generateView($partStory['dir'], $partStory['view'], $partStory['story']);
+        generateTemplates($partStory['dir'], $partStory['template']);
+        generateView($partStory['dir'], $partStory['view'], $partStory['template']);
         generateController($partStory['dir'], $partStory['controller'], $partStory['treatment']);
+
     }
 
 
@@ -80,6 +90,13 @@ foreach ($story['story'] as $data) {
     }
 }
 
+
+//  TO DO :
+// ADD ALL LOGIC FROM OLD PROJECT ABOUT ROUTES ETC TO SET SESSION ETC ETC
+// FINISH TO FIND SYSTEM TO PRINT THE CONTENT OF VIEW ETC IN PHP ! 5FROM YAML Key => story
+
+// ADD OBJECT CLASS FOR CONTRLLER AND VIEW CONTENT
+// DO A FUNCTION WHO GET THE KEY OF YAML AND SEARCH IN TAB DEFINE IN THESE CLASS THE CONTENT TO PRINT (REGISTER IN KEY WHO HAS THE SAME NAME)
 
 $response->send();
 ?>

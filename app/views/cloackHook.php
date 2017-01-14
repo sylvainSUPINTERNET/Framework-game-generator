@@ -1,3 +1,3 @@
 <?php include "../web/layout/header.php";?> 
- <?php include '../app/controllers/cloackHookController.php' ?> 
- <?php echo('<p>cloackHook cloackHook</p>')?>
+ <?php include "../app/templates/cloackHook.php";?> 
+ <?php include '../app/controllers/cloackHookController.php' ?>
