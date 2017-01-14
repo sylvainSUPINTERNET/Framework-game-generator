@@ -1,0 +1,2 @@
+<?php #Write your content 
+  $try = $session->get('try'); if($try == null){ $try = 0; } if($try == 1){ $messageEnd = 'DEFAITE, votre score : ' . $try; }else{ $messageEnd = 'VICTOIRE, votre score : ' . $try; } ?>

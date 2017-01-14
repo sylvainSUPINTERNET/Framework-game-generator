@@ -1,0 +1,112 @@
+story:
+  part1 :
+      path: "/intro"
+      controller: "intro"
+      view: "intro"
+      template: 'intro'
+      treatment: "$title = 'Foyer Of Opera';"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part2 :
+      path: "/south"
+      controller: "south"
+      view: "south"
+      template: 'south'
+      treatment: "$testSouthController ='data from controller south !' "
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part3 :
+      path: "/westShadow"
+      controller: "westShadow"
+      view: "westShadow"
+      template: "westShadow"
+      treatment: "$testWarningShadow = 'Vous déranger quelque chose dans l obscurité, peut-être devriez vous songer à déposer votre manteau avant d entrée !';"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part4 :
+      path: "/west"
+      controller: "west"
+      view: "west"
+      template: "west"
+      treatment: "$textWest = 'Votre manteau est gênant, vous devriez en faire quelque chose';"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part5 :
+      path: "/north"
+      controller: "north"
+      view: "north"
+      template: "north"
+      treatment: "$textNorth = 'Vous êtes dehors veuillez rentrez !';"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part6 :
+      path: "/cloackVestiaire"
+      controller: "cloackVestiaire"
+      view: "cloackVestiaire"
+      template: "cloackVestiaire"
+      treatment: "$cloackVestiaire = 'Votre manteau a été déposé au vestiaire !'"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part7 :
+      path: "/cloackHook"
+      controller: "cloackHook"
+      view: "cloackHook"
+      template: "cloackHook"
+      treatment: "$cloackHook = 'Votre manteau a bien été mis sur le porte-manteau!'"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part8 :
+      path: "/westOpen"
+      controller: "westOpen"
+      view: "westOpen"
+      template: "westOpen"
+      treatment: "$textWestOpen = 'La salle est désormais éclairée';"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part9 :
+      path: "/message"
+      controller: "message"
+      view: "message"
+      template: "message"
+      treatment: " $try = $session->get('try');
+      if($try == null){
+         $try = 0;
+      }
+      if($try == 1){
+          $messageEnd = 'DEFAITE, votre score : ' . $try;
+      }else{
+          $messageEnd = 'VICTOIRE, votre score : ' . $try;
+      }"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part10 :
+      path: "/reset"
+      controller: "reset"
+      view: "reset"
+      template: "reset"
+      treatment: "$testReset = 'data test from controller of reset route'"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+  part11 :
+      path: "/forcer"
+      controller: "forcer"
+      view: "forcer"
+      template : "forcer"
+      treatment: "$testForcer = 'data test from controller of force route'"
+      dir: '../app'
+      dir_ctrl: '../app/controllers'
+      dir_view: '../app/views'
+
+
+
+
