@@ -1,16 +1,79 @@
 # Framework - Game
-First help
 
+**Use symfony component HttpFoundation 3.2, YAML**
 
-**Use symfony component HttpFoundation 3.2**
 
 **Use Bootstrap 3.3.7**
 
-#Run server
+#Install all components
 
-**Go to web directory**
+Go to the main directory of the framework
+
+:heavy_check_mark: composer **install**
+
+#Contemplate the power of my framework (exemple story used)
+
+:point_right: Go to /web directory 
+
+__*run exemple story*__
+
+:ok_hand: *Run this command* : 
+ php **-S localhost:8000**
+
+#That your turn now !
+**Define your own story !**
+
+    /config-story/story.yml
     
-     run server : php -S localhost:8000
+  :warning: Your controllers, views and templates must have the same name 
+  
+  :zap: Exemple view : home, controller: homeController: template:home :zap:
+  
+  :warning: You can add contents of views / controllers for the automatic generation with command line **generate** or define your own logics and treatments in the generated files ( all includes / require_once of them are already done automaticly at the generation)
+  
+  
+  
+**To complete the story's creation step** 
+
+:point_right: Go to **/web directory** 
+
+
+:ok_hand: *Run this command* : 
+ php **index.php generate**
+ 
+ :x:REMOVE MANUALLY BEFORE RUN GENERATE /app/controllers/* /app/views/* app/templates/
+ 
+ 
+ :x:GENERATE REMOVE EXISTING FILES SO IF YOU DONT WANT LOOSE YOUR WORK YOU MUSNT RUN THIS COMMAND
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ **It's time to see your own story**
+
+:ok_hand: *Run this command* : 
+ php **-S localhost:8000**
+ 
+ 
+ :question:  To see the result : **localhost:8000/yourPathDefinedInTheStory.yml**
+
+
+
+
+**Go further**
+
+
+:point_right: Go to **/config-story/route-events/eventsManager.php** 
+
+:squirrel: Here, you can defined your own logic according to the current path for an exemple, or you can start some sessions ...
+
+**Foundations is automaticly include via the include of this file in the /web/index.php**
+
+
+
      
 #How its works ?
       /web/index.php
@@ -30,7 +93,7 @@ First help
       => Definie variable and all treatmens and be called in the view link into the config controller.php and routing.php
       
       
-#Story
+#Story (exemple)
 The Foyer of the Opera House is where the game begins. This empty room has doors to the south and west, also an unusable exit to the north. There is nobody else around.
 The Bar lies south of the Foyer, and is initially unlit. Trying to do anything other than return northwards results in a warning message about disturbing things in the dark.
 On the wall of the Cloakroom, to the west of the Foyer, is fixed a small brass hook.
