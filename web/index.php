@@ -70,7 +70,12 @@ $response = new Response();
 $session = new Session();
 $session->start();
 
+
+
+
 $currentUrl = $request->getPathInfo();
+
+include('../config-story/route-events/eventsManager.php');
 
 foreach ($story['story'] as $data) {
     if ($data['path'] == $currentUrl) {

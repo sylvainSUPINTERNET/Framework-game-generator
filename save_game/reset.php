@@ -1,1 +1,0 @@
-<?php include '../app/controllers/reset resetController.php' ?>

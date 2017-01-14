@@ -1,1 +1,0 @@
-<?php include '../app/controllers/cloackHookController.php' ?>

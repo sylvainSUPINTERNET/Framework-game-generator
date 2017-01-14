@@ -1,1 +1,0 @@
-<?php include '../app/controllers/westController.php' ?>
