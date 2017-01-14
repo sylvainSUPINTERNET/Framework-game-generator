@@ -3,7 +3,8 @@ story:
       path: "/intro"
       controller: "intro"
       view: "intro"
-      story: "intro page"
+      story: "intro page <p>lol</p>"
+      treatment: "$lol = 'salut all'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -12,6 +13,7 @@ story:
       controller: "south"
       view: "south"
       story: "south Page"
+      treatment: "$lol = 'salut all'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -20,6 +22,7 @@ story:
       controller: "westShadow"
       view: "westShadow"
       story: "westShadowwestShadow westShadow"
+      treatment: "$lol = 'salut all'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -28,6 +31,7 @@ story:
       controller: "west"
       view: "west"
       story: "west west"
+      treatment: "$lol = 'salut all'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -36,6 +40,7 @@ story:
       controller: "north"
       view: "north"
       story: "north north"
+      treatment: "$lol = 'salut all'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -44,6 +49,7 @@ story:
       controller: "cloackVestiaire"
       view: "cloackVestiaire"
       story: "cloackVestiaire cloackVestiaire"
+      treatment: "$lol = 'salut all'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -52,6 +58,7 @@ story:
       controller: "cloackHook"
       view: "cloackHook"
       story: "cloackHook cloackHook"
+      treatment: "$lol = 'salut all'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -60,6 +67,7 @@ story:
       controller: "westOpen"
       view: "westOpen"
       story: "westOpen westOpen"
+      treatment: "$lol = 'salut all'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -68,6 +76,7 @@ story:
       controller: "message"
       view: "message"
       story: "message message"
+      treatment: "$lol = 'salut all'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -76,6 +85,7 @@ story:
       controller: "reset"
       view: "reset"
       story: "reset reset"
+      treatment: "$lol = 'salut all'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -84,6 +94,7 @@ story:
       controller: "forcer"
       view: "forcer"
       story: "forcer forcer"
+      treatment: "$lol = 'salut all'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'

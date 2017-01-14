@@ -14,16 +14,16 @@ function generateView($dir, $viewName, $contentStory)
 {
     $fp = fopen($dir . "/views/" . $viewName . ".php", "a+");
     $linkedController = $viewName . "Controller.php";
-    fputs($fp, "<?php include \"../web/layout/header.php\";?> <?php include '../app/controllers/$linkedController' ?> <?php echo('<p>$contentStory</p>')?>");
+    fputs($fp, "<?php include \"../web/layout/header.php\";?> \r\n <?php include '../app/controllers/$linkedController' ?> \r\n <?php echo('<p>$contentStory</p>')?>");
     fclose($fp);
 }
 
 ;
 
-function generateController($dir, $ctrlName)
+function generateController($dir, $ctrlName, $treatment)
 {
     $fp = fopen($dir . "/controllers/" . $ctrlName . "Controller.php", "a+");
-    fputs($fp, "<?php #Write your content ?>");
+    fputs($fp, "<?php #Write your content \r\n $treatment ?>");
     fclose($fp);
 }
 
@@ -37,7 +37,7 @@ if (isset($argv) && $argv[1] == 'generate' && $argv[0] == 'index.php') {
     foreach ($story['story'] as $partStory) {
         //var_dump($part['path'],$part['controller'], $part['view'], $part['story']);
         generateView($partStory['dir'], $partStory['view'], $partStory['story']);
-        generateController($partStory['dir'], $partStory['controller']);
+        generateController($partStory['dir'], $partStory['controller'], $partStory['treatment']);
     }
 
 
