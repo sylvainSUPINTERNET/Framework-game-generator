@@ -31,7 +31,7 @@ __*run exemple story*__
   
   :warning: You can add contents of views / controllers for the automatic generation with command line **generate** or define your own logics and treatments in the generated files ( all includes / require_once of them are already done automaticly at the generation)
   
-  
+  <br><br>
   
 **To complete the story's creation step** 
 
@@ -48,9 +48,21 @@ __*run exemple story*__
     
  
  
+ <br><br>
  
+ **Save your game** 
+
+:point_right: Go to **/web directory** 
+
+
+:ok_hand: *Run this command* : 
+ php **saveManager.php save NameOfYourGame(folder)**
+  
+ **This command will copy the essentials folders to make your game work (web/app/config-story) with all files inside**
  
+ **You should use this command to save your work if you want use generate after to dont delete all of your code in /app/**
  
+ <br><br>
  
  **It's time to see your own story**
 
@@ -61,7 +73,7 @@ __*run exemple story*__
  :question:  To see the result : **localhost:8000/yourPathDefinedInTheStory.yml**
 
 
-
+<br><br>
 
 **Go further**
 
@@ -75,22 +87,55 @@ __*run exemple story*__
 
 
      
-#How its works ?
-      /web/index.php
-      => Manage route system, get the route and give the template and controller link to that route 
-      => Manage session for game win condition and loose condition 
-      
-      /app/config/controller.php || routing.php
-      => Do the link between the URL and the route template (/app/views)
-      => Do the link between the URL and the controller to call (/app/controllers)
-      
-      **Template (/app/views/*)**
-      => Include the controllers to use 
-      => return variable in that controller
-      
-      
-      **Controller (/app/controllers/*)**
-      => Definie variable and all treatmens and be called in the view link into the config controller.php and routing.php
+#Overall explanation ?
+
+**Test the exemple story (automaticly write in .yml etc) and save as FoyerOfOpera**
+
+/web
+
+php **-S localhost:8000**
+
+<br>
+
+**More informations for customs stories**
+
+
+*Mains commands*
+  <ul>
+  <p>**/web**</p>
+  <code>php index.php generate</code>
+  <li>Read your story.yml and generate all files about these informations (care this command override existing file so delete all inside controllers view and templates before use it ! (or save)</li>
+    <br>
+    <p>**/web**</p>
+  <code>php index.php save NameFileYouWant(generate)</code>
+  <li>Read folders in /app/views|controllers|templates and copy inside the NameFileYouWant</li>
+  <br>
+    <p>**/web**</p>
+  <code>php -S localhost:YOUR_PORT</code>
+  <li>Use the index.php (manage the route and render)</li>
+  </ul>
+
+*About files and utilities*
+ <ul>
+ <li>**/config-story**</li>
+ <li>**story.yml** allow to write all your routes etc for the generation by command line generate</li>
+ <br>
+ <li>**/config-story/route-events**</li>
+ <li>**eventsManager.php** To custom the behavior of routes, add sessions etc...</li>
+ 
+ <br>
+ 
+ <li>**/app/views|controllers|templates**</li>
+ <li>All are linked, then you can definied your logics in controllers and used your variable into your templates sand views</li>
+ 
+ <br>
+ 
+ <li>**/save_game/**</li>
+ <li>Contains the file you have generate with the command save, (app / web / story-config)</li>
+ 
+ 
+ 
+ <ul>
       
       
 #Story (exemple)
