@@ -1,2 +1,2 @@
 <?php #Write your content 
- $lol = 'salut all' ?>
+ $textWest = 'Votre manteau est gênant, vous devriez en faire quelque chose'; ?>

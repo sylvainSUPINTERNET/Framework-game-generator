@@ -1,2 +1,2 @@
 <?php #Write your content 
- $lol = 'salut all' ?>
+ $testForcer = 'data test from controller of force route' ?>

@@ -3,8 +3,8 @@ story:
       path: "/intro"
       controller: "intro"
       view: "intro"
-      story: "intro page <p>lol</p>"
-      treatment: "$lol = 'salut all'"
+      story: "wait"
+      treatment: "$title = 'Foyer Opera';"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -13,7 +13,7 @@ story:
       controller: "south"
       view: "south"
       story: "south Page"
-      treatment: "$lol = 'salut all'"
+      treatment: "$testSouthController ='data from controller south !' "
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -22,7 +22,7 @@ story:
       controller: "westShadow"
       view: "westShadow"
       story: "westShadowwestShadow westShadow"
-      treatment: "$lol = 'salut all'"
+      treatment: "$testWarningShadow = 'Vous déranger quelque chose dans l'obscurité, peut-être devriez vous songer à déposer votre manteau avant d'entrée !';"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -31,7 +31,7 @@ story:
       controller: "west"
       view: "west"
       story: "west west"
-      treatment: "$lol = 'salut all'"
+      treatment: "$textWest = 'Votre manteau est gênant, vous devriez en faire quelque chose';"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -40,7 +40,7 @@ story:
       controller: "north"
       view: "north"
       story: "north north"
-      treatment: "$lol = 'salut all'"
+      treatment: "$textNorth = 'Vous êtes dehors veuillez rentrez !';"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -49,7 +49,7 @@ story:
       controller: "cloackVestiaire"
       view: "cloackVestiaire"
       story: "cloackVestiaire cloackVestiaire"
-      treatment: "$lol = 'salut all'"
+      treatment: "$cloackVestiaire = 'Votre manteau a été déposé au vestiaire !'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -58,7 +58,7 @@ story:
       controller: "cloackHook"
       view: "cloackHook"
       story: "cloackHook cloackHook"
-      treatment: "$lol = 'salut all'"
+      treatment: "$cloackHook = 'Votre manteau a bien été mis sur le porte-manteau!'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -67,7 +67,7 @@ story:
       controller: "westOpen"
       view: "westOpen"
       story: "westOpen westOpen"
-      treatment: "$lol = 'salut all'"
+      treatment: "$textWestOpen = 'La salle est désormais éclairée';"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -76,7 +76,15 @@ story:
       controller: "message"
       view: "message"
       story: "message message"
-      treatment: "$lol = 'salut all'"
+      treatment: " $try = $session->get('try');
+      if($try == null){
+         $try = 0;
+      }
+      if($try == 1){
+          $messageEnd = 'DEFAITE, votre score : ' . $try;
+      }else{
+          $messageEnd = 'VICTOIRE, votre score : ' . $try;
+      }"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -85,7 +93,7 @@ story:
       controller: "reset"
       view: "reset"
       story: "reset reset"
-      treatment: "$lol = 'salut all'"
+      treatment: "$testReset = 'data test from controller of reset route'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'
@@ -94,7 +102,7 @@ story:
       controller: "forcer"
       view: "forcer"
       story: "forcer forcer"
-      treatment: "$lol = 'salut all'"
+      treatment: "$testForcer = 'data test from controller of force route'"
       dir: '../app'
       dir_ctrl: '../app/controllers'
       dir_view: '../app/views'

@@ -1,2 +1,2 @@
 <?php #Write your content 
- $lol = 'salut all' ?>
+ $cloackHook = 'Votre manteau a bien été mis sur le porte-manteau!' ?>

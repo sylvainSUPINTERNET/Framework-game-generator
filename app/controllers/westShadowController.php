@@ -1,2 +1,2 @@
 <?php #Write your content 
- $lol = 'salut all' ?>
+ $testWarningShadow = 'Vous déranger quelque chose dans l'obscurité, peut-être devriez vous songer à déposer votre manteau avant d'entrée !'; ?>

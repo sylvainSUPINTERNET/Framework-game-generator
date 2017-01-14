@@ -1,2 +1,2 @@
 <?php #Write your content 
- $lol = 'salut all' ?>
+ $testSouthController ='data from controller south !'  ?>

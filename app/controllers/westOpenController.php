@@ -1,2 +1,2 @@
 <?php #Write your content 
- $lol = 'salut all' ?>
+ $textWestOpen = 'La salle est désormais éclairée'; ?>

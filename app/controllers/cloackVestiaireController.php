@@ -1,2 +1,2 @@
 <?php #Write your content 
- $lol = 'salut all' ?>
+ $cloackVestiaire = 'Votre manteau a été déposé au vestiaire !' ?>
