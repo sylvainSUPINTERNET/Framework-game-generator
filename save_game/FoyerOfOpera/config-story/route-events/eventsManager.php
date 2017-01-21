@@ -42,10 +42,32 @@ if ($currentUrl == '/reset') {
     $currentUrl = '/intro';
 }
 
+
+//Forbidden access to /message if you try go directly you are automaticly redirect to intro
+if($currentUrl == '/forcer' || $currentUrl == '/westShadow'){
+    $session->set("allow_victory_access",true);
+}
+
+if($currentUrl == '/cloackHook' || $currentUrl == '/cloackHook'){
+    $session->set("allow_victory_access",true);
+}
+
+/*REDIRECT TO INTRO (if you dont use cheater message)*/
 /*
-var_dump($session->get('putCloack'));
-var_dump($session->get('try'));
+if($session->get("allow_victory_access") == false && $currentUrl == '/message'){
+    $currentUrl  = '/intro'; //redirect to base
+}
 */
+
+/*if you are cheater */
+if($session->get("allow_victory_access") == false && $currentUrl == '/message'){
+    $session->set("try",1);
+    $currentUrl  = '/message'; //redirect to base
+    $cheater = "Bravo vous avez triché";
+
+}
+
+
 
 $try = $session->get('try');
 $cloackDropped = $session->get('putCloack');

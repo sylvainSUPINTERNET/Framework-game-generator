@@ -11,8 +11,7 @@ $story = Yaml::parse(file_get_contents('../config-story/story.yml'));
 
 function generateTemplates($dir, $templateName){
     $fp = fopen($dir . "/templates/" . $templateName . ".php", "a+");
-    $linkedController = $templateName."Controller.php";
-    fputs($fp, "<?php include '../app/controllers/$linkedController' ?>");
+    fputs($fp, "<?php #template auto generate ?>");
     fclose($fp);
 }
 
@@ -22,7 +21,7 @@ function generateView($dir, $viewName, $template)
     $fp = fopen($dir . "/views/" . $viewName . ".php", "a+");
     $linkedController = $viewName . "Controller.php";
     $template = $template.".php";
-    fputs($fp, "<?php include \"../web/layout/header.php\";?> \r\n <?php include \"../app/templates/$template\";?> \r\n <?php include '../app/controllers/$linkedController' ?>");
+    fputs($fp, "<?php include '../app/controllers/$linkedController' ?> \r\n <?php include \"../web/layout/header.php\";?> \r\n <?php include \"../app/templates/$template\";?> \r\n");
     fclose($fp);
 }
 

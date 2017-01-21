@@ -5,6 +5,9 @@
 
 
 print("<p class='text-center'>$messageEnd</p>");
+if(!empty($cheater)){
+    printf("<p class='text-center'><span class='glyphicon glyphicon-thumbs-up' aria-hidden=\"true\"></span> %s <span class='glyphicon glyphicon-thumbs-up' aria-hidden=\"true\"></span></p>", $cheater);
+}
 ?>
 
 <p class="text-center">
