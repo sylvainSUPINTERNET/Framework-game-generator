@@ -41,7 +41,7 @@ __*run exemple story*__
 :ok_hand: *Run this command* : 
  php **index.php generate**
  
- :x:REMOVE MANUALLY BEFORE RUN GENERATE /app/controllers/* /app/views/* app/templates/
+ :x:REMOVE MANUALLY BEFORE RUN GENERATE /app/controllers/* /app/views/* app/templates/*
  
  
  :x:GENERATE REMOVE EXISTING FILES SO IF YOU DONT WANT LOOSE YOUR WORK YOU MUSNT RUN THIS COMMAND
