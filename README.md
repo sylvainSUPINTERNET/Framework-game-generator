@@ -58,7 +58,7 @@ __*run exemple story*__
 :ok_hand: *Run this command* : 
  php **saveManager.php save NameOfYourGame(folder)**
   
- **This command will copy the essentials folders to make your game work (web/app/config-story) with all files inside**
+ **This command will copy the essentials files / folders (app / web / composer / ) to make your game work (web/app/config-story) with all files inside**
  
  **You should use this command to save your work if you want use generate after to dont delete all of your code in /app/**
  
