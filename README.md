@@ -29,7 +29,7 @@ __*run exemple story*__
   
   :zap: Exemple view : home, controller: homeController, template:home :zap:
   
-  :warning: You can add contents of views / controllers for the automatic generation with command line **generate** or define your own logics and treatments in the generated files ( all includes / require_once of them are already done automaticly at the generation)
+  :warning: You can add contents of views / controllers / templates for the automatic generation with command line **generate** or define your own logics and treatments in the generated files ( all includes / require_once of them are already done automaticly at the generation)
   
   <br><br>
   
