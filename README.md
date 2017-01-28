@@ -47,6 +47,8 @@ Before use the following command :
 :ok_hand: *Run this command* : 
  php **index.php generate**
  
+ 
+ This command will create all files into the right folders (app/views | controllers | templates) as indicate into your story.yml
 
     
  
