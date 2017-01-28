@@ -41,7 +41,7 @@ __*run exemple story*__
 :ok_hand: *Run this command* : 
  php **index.php generate**
  
- :x:REMOVE MANUALLY BEFORE RUN GENERATE /app/controllers/* /app/views/* app/templates/*
+ :x:BEFORE GENERATE, delete all the old views / controllers / templates, into /app (else that will rewrite in the already exist files and folders...
  
  
  :x:GENERATE REMOVE EXISTING FILES SO IF YOU DONT WANT LOOSE YOUR WORK YOU MUSNT RUN THIS COMMAND
