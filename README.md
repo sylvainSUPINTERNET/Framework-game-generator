@@ -39,7 +39,7 @@ __*run exemple story*__
 
 Before use the following command :
 
- :x:BEFORE GENERATE, delete all the old views / controllers / templates, into /app (else that will rewrite in the already exist files and folders...
+ :x:BEFORE GENERATE, in the /app/views | controllers | templates/ delete all files .php (else that will rewrite in the already exist files into these directories)
  
  
  :x:GENERATE REMOVE EXISTING FILES SO IF YOU DONT WANT LOOSE YOUR WORK YOU MUSNT RUN THIS COMMAND AND SAVE BEFORE RUN THIS (as note after where we talking about use command save to save your own games folders and file)
