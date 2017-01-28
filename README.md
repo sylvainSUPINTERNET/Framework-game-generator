@@ -121,7 +121,7 @@ php **-S localhost:8000**
 *About files and utilities*
  <ul>
  <li>**/config-story**</li>
- <li>**story.yml** allow to write all your routes etc for the generation by command line generate</li>
+ <li>**story.yml** allow to write all your informations about routes, controllers, content of views and templates etc for the generation by command line generate</li>
  <br>
  <li>**/config-story/route-events**</li>
  <li>**eventsManager.php** To custom the behavior of routes, add sessions etc...</li>
@@ -129,12 +129,12 @@ php **-S localhost:8000**
  <br>
  
  <li>**/app/views|controllers|templates**</li>
- <li>All are linked, then you can definied your logics in controllers and used your variable into your templates sand views</li>
+ <li>All are linked, then you can definied your logics in controllers and used your variable into your templates herself use into the corresponding views</li>
  
  <br>
  
  <li>**/save_game/**</li>
- <li>Contains the file you have generate with the command save, (app / web / story-config)</li>
+ <li>Contains the file you have generate with the command save, (app / web / story-config / composer (if you use other computer etc), and you have just to replace the current app/web/story-config by them into your save folder to have your game's save</li>
  
  
  
