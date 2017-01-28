@@ -44,6 +44,10 @@ Before use the following command :
  
  :x:GENERATE REMOVE EXISTING FILES SO IF YOU DONT WANT LOOSE YOUR WORK YOU MUSNT RUN THIS COMMAND AND SAVE BEFORE RUN THIS (as note after where we talking about use command save to save your own games folders and file)
 
+
+:x:THINK TO SAVE if you want keep your works before run this (ref save command)
+
+
 :ok_hand: *Run this command* : 
  php **index.php generate**
  
@@ -67,6 +71,8 @@ Before use the following command :
  
  **You should use this command to save your work if you want use generate after to dont delete all of your code in /app/**
  
+ To import save story : Delete /app, /story-config, /web of your current project, and copy the save's folder of the game you want
+ 
  <br><br>
  
  **It's time to see your own story**
@@ -79,6 +85,8 @@ Before use the following command :
  
  
  :question:  To see the result : **localhost:8000/yourPathDefinedInTheStory.yml**
+ 
+ Now you have just to code the story details !
 
 
 <br><br>
