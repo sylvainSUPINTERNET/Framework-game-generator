@@ -13,11 +13,11 @@ Go to the main directory of the framework
 
 #Contemplate the power of my framework (exemple story used)
 
-:point_right: Go to /web directory 
+:point_right: Go to /web
 
 __*run exemple story*__
 
-:ok_hand: *Run this command* : 
+:ok_hand: *Run this command* (into /web) : 
  php **-S localhost:8000**
 
 #That your turn now !
@@ -27,7 +27,7 @@ __*run exemple story*__
     
   :warning: Your controllers, views and templates must have the same name 
   
-  :zap: Exemple view : home, controller: homeController: template:home :zap:
+  :zap: Exemple view : home, controller: homeController, template:home :zap:
   
   :warning: You can add contents of views / controllers for the automatic generation with command line **generate** or define your own logics and treatments in the generated files ( all includes / require_once of them are already done automaticly at the generation)
   
