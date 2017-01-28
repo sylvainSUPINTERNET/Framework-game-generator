@@ -52,7 +52,7 @@ __*run exemple story*__
  
  **Save your game** 
 
-:point_right: Go to **/web directory** 
+:point_right: Go to **/web** 
 
 
 :ok_hand: *Run this command* : 
