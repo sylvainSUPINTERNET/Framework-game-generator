@@ -37,14 +37,17 @@ __*run exemple story*__
 
 :point_right: Go to **/web** 
 
+Before use the following command :
 
-:ok_hand: *Run this command* : 
- php **index.php generate**
- 
  :x:BEFORE GENERATE, delete all the old views / controllers / templates, into /app (else that will rewrite in the already exist files and folders...
  
  
  :x:GENERATE REMOVE EXISTING FILES SO IF YOU DONT WANT LOOSE YOUR WORK YOU MUSNT RUN THIS COMMAND AND SAVE BEFORE RUN THIS (as note after where we talking about use command save to save your own games folders and file)
+
+:ok_hand: *Run this command* : 
+ php **index.php generate**
+ 
+
     
  
  
