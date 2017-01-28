@@ -35,7 +35,7 @@ __*run exemple story*__
   
 **To complete the story's creation step** 
 
-:point_right: Go to **/web directory** 
+:point_right: Go to **/web** 
 
 
 :ok_hand: *Run this command* : 
@@ -65,6 +65,9 @@ __*run exemple story*__
  <br><br>
  
  **It's time to see your own story**
+
+:point_right: Go to **/web** 
+
 
 :ok_hand: *Run this command* : 
  php **-S localhost:8000**
