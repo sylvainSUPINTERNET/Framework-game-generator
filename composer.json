@@ -1,5 +1,8 @@
 {
-    "require": {
-        "symfony/routing": "^3.2"
-    }
+  "require": {
+    "symfony/routing": "^3.2",
+    "symfony/http-foundation": "dev-master",
+    "symfony/yaml": "dev-master",
+    "symfony/polyfill-mbstring": "dev-master"
+  }
 }
